@@ -1,0 +1,25 @@
+This backlog project is a python project
+
+It exposes endpoints.Behing the endpoint python scripts will perform some CRUD data
+
+The database used is a document oriented one (NoSQL) mongodb
+
+Here is the list of endpoint exposed by the API:
+
+/parseBacklog (GET)
+
+/AddBugOrTaskToEpic (POST)
+
+databasese update
+
+parameters
+
+'condition' : it is a filter exemple {"Name" : "EpicC"}
+'new_value' : the update statement example {"Epics": ["ba"]}
+ 
+ ex: http://127.0.0.1:5000/AddBugOrTaskToEpic?condition='{"Name" : "EpicC"}'&new_value='{"Epics": ["ba"]}'
+
+/ListAllBugsFromEpic (GET)
+
+/ListAllBlockedEpicsFromBugNames (GET)
+
